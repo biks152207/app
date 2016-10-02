@@ -12,8 +12,13 @@ module.exports = {
   },
   mailer: {
     user: 'biks152207',
-    password: 'beatles12',
+    password: 'shutterisland152207',
     adminEmail: 'bikrambasnet1@gmail.com'
+  },
+  facebook: {
+    clientID: '1780990305515917',
+    clientSecret: 'cc7341b671731df7efe44add63b1c79e',
+    callbackURL: 'http://localhost:3000/auth/facebook/callback'
   },
   seedDB: true
 

@@ -22,7 +22,7 @@ exports.default = function (app) {
   app.set('appPath', _path2.default.join(_environment2.default.root, 'client'));
   app.use(_express2.default.static(app.get('appPath')));
   app.use((0, _morgan2.default)('dev'));
-
+  app.use((0, _cors2.default)());
   app.set('views', _environment2.default.root + '/server/views');
   app.engine('html', require('ejs').renderFile);
   app.set('view engine', 'html');
@@ -173,6 +173,10 @@ var _connectMongo2 = _interopRequireDefault(_connectMongo);
 var _mongoose = require('mongoose');
 
 var _mongoose2 = _interopRequireDefault(_mongoose);
+
+var _cors = require('cors');
+
+var _cors2 = _interopRequireDefault(_cors);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 

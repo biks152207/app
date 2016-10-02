@@ -157,6 +157,8 @@ function forget(req, res) {
  */
 function me(req, res, next) {
   var userId = req.user._id;
+  console.log(userId);
+  console.log('heal the world');
 
   return _user2.default.findOne({ _id: userId }, '-salt -password').exec().then(function (user) {
     // don't ever give out the password or salt

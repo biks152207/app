@@ -20,8 +20,7 @@ _mongoose2.default.Promise = require('bluebird');
 var authTypes = ['github', 'twitter', 'facebook', 'google'];
 
 var UserSchema = new _mongoose.Schema({
-  firstName: String,
-  lastName: String,
+  username: String,
   email: {
     type: String,
     lowercase: true,
