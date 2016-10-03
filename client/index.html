@@ -11,6 +11,26 @@
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 </head>
 <body oncopy="return false" oncut="return false" onpaste="return false">
+    <div id="wrapper"  ng-if="isLoading">
+          <div class="m-app-loading">
+
+              <!-- BEGIN: Actual animated container. -->
+              <div class="animated-container">
+
+                  <div class="messaging">
+
+                      <h1>
+                          App is Loading <i class="fa fa-circle-o-notch fa-spin fa-1x fa-fw"></i>
+                      </h1>
+
+                  </div>
+
+              </div>
+              <!-- END: Actual animated container. -->
+
+          </div>
+        </div>
+      <!-- END: App-Loading Screen. -->
     <!--[if lt IE 9]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -30,5 +50,5 @@
     <div ui-view=""></div>
     <!-- <common></common> -->
     <footers></footers>
-<script type="text/javascript" src="/vendor.d836092945977dfd751f.js"></script><script type="text/javascript" src="/polyfills.d836092945977dfd751f.js"></script><script type="text/javascript" src="/app.d836092945977dfd751f.js"></script></body>
+<script type="text/javascript" src="/vendor.ccf015de04d9111a4f95.js"></script><script type="text/javascript" src="/polyfills.ccf015de04d9111a4f95.js"></script><script type="text/javascript" src="/app.ccf015de04d9111a4f95.js"></script></body>
 </html>
